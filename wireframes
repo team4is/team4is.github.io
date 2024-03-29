@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wireframe - Trang web tin tức</title>
+  <style>
+    /* CSS để tạo giao diện wireframe */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav {
+      background: #eee;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    article {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NEWS</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Tìm kiếm</a></li>
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#">Xã hội</a></li>
+      <li><a href="#">Chính trị</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Danh mục 1</h2>
+
+    <article>
+      <h3>Tiêu đề bài viết 1</h3>
+      <img src="https://play-lh.googleusercontent.com/QvTfA5WH0B4X04u_sxSBdb-PlO7Wj6yjeyJVzwoyUsefJPTXDE75QBKKJr1fyI5CHQq9" alt="Hình ảnh">
+      <p>Nội dung tóm tắt bài viết</p>
+      <a href="#">Đọc tiếp</a>
+    </article>
+
+    <article>
+      <h3>Tiêu đề bài viết 2</h3>
+      <img src="https://play-lh.googleusercontent.com/QvTfA5WH0B4X04u_sxSBdb-PlO7Wj6yjeyJVzwoyUsefJPTXDE75QBKKJr1fyI5CHQq9" alt="Hình ảnh">
+      <p>Nội dung tóm tắt bài viết</p>
+      <a href="#">Đọc tiếp</a>
+    </article>
+
+    <article>
+      <h3>Tiêu đề bài viết 3</h3>
+      <img src="https://play-lh.googleusercontent.com/QvTfA5WH0B4X04u_sxSBdb-PlO7Wj6yjeyJVzwoyUsefJPTXDE75QBKKJr1fyI5CHQq9" alt="Hình ảnh">
+      <p>Nội dung tóm tắt bài viết</p>
+      <a href="#">Đọc tiếp</a>
+    </article>
+  </section>
+</body>
+<footer>
+    <div class="contact-form">
+        <h2>Liên hệ</h2>
+        <form action="#" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+    
+          <button type="submit">Send</button>
+        </form>
+      </div>
+</footer>
+</html>
