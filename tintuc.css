@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#nav li {
+    display: inline-block;
+}
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+#nav li:hover a {
+    color: #000;
+    background-color: #fff;
+}
+.search-container {
+    position: fixed;
+    top: 5px; /* Đặt vị trí từ đỉnh cách 5px */
+    right: 20px; /* Đặt vị trí từ phải cách 20px */
+    z-index: 999;
+}
+
+.search-container input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    background-color: #000;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.ychinh {
+    margin-top: 60px;
+}
