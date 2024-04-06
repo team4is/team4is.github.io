@@ -33,28 +33,76 @@
     right: 20px; /* Đặt vị trí từ phải cách 20px */
     z-index: 999;
 }
-
-.search-container input[type="text"] {
-    width: 200px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-}
-
-.search-container button {
-    padding: 10px 15px;
-    background-color: #000;
-    border: none;
-    border-radius: 0 5px 5px 0;
+#searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+#searchBox {
+    all: unset;
+    font: 16px system-ui;
     color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 5px 0 0 5px;
+  }
+  
+#searchBox:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  
+button {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 50px;
+    padding: 6px 10px;
+    border-radius: 0 5px 5px 0;
+    background-color: #4654e1;
     cursor: pointer;
+  }
+  
+button:hover {
+    background-color: #3745c2;
+  }
+.a {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
 }
-
-.search-container button:hover {
-    background-color: #fff;
-    color: #000;
+.a h2 {
+    margin-bottom: 20px;
 }
-.ychinh {
-    margin-top: 60px;
+.a input[type="text"],
+.a input[type="email"],
+.a textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
+.a textarea {
+    height: 100px;
+}
+.btn button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn button:hover {
+    background-color: #0056b3;
+} 
