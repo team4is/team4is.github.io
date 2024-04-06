@@ -18,10 +18,9 @@
             </ul>
     </div>
     <form id="searchForm">
-        <input type="text" id="searchBox" placeholder="Search...">
+        <input type="text" id="searchBox" placeholder="Tìm kiếm...">
         <button type="submit">Search</button>
     </form>
-
     <div>
         <main>
             <div class="a">
@@ -44,5 +43,25 @@
             </div>        
         </main>
     </div>
+    <script>
+        const searchForm = document.getElementById('searchForm');
+        const searchBox = document.getElementById('searchBox');
+
+        searchForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const searchTerm = searchBox.value.toLowerCase();
+            const searchResults = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6,div');
+
+            searchResults.forEach((result) => {
+                if (result.textContent.toLowerCase().includes(searchTerm)) {
+                    result.style.backgroundColor = '#f5f5f5';
+                    result.style.border = '1px solid #4654e1';
+                } else {
+                    result.style.backgroundColor = '';
+                    result.style.border = '';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
