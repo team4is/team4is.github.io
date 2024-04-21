@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <div>
+            <a href="index.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxG_yD1s8AdmKFvi6tz1fETTNXFEM8jHs0f-Dl2PA7-w&s"
+                height = "20rem">
+
+            </a>
+            <a id="time-now" class="nor-heading">
+
+            </a>
+            <script>
+                var today = new Date();
+                var date = today.getDate() + "/" + (today.getMonth()+1) + "/" + today.getFullYear();
+                document.getElementById("time-now").innerHTML = date;  
+            </script>
+            <a class="nor-heading">Hỗ trợ</a>
+        </div>
+        <div>
+            <a>Tin mới nhất</a>
+            <a>Tin theo khu vực</a>
+            <a><ion-icon name="person-outline"></ion-icon></a>
+        </div>
+    </div>
+    <div class="banner-span">
+        
+    </div>
+    <div class="col-15" style="display: flex; justify-content: center; border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5; background: white;" id="navigation">
+        <div class="nav col-12">
+            <button><a href="index.html">Trang chủ</a></button>
+            <button><a href="index.html#business">Kinh doanh</a></button>
+            <button><a href="index.html#sport">Thể thao</a></button>
+            <button><a href="index.html#science">Khoa học</a></button>
+            <button><a href="index.html#world">Thế giới</a></button>
+                
+            
+            <button><a href="/search.html">Tìm kiếm</a></button>
+            <button><a href="/contact.html">Liên hệ</a></button>
+          
+        </div>
+    </div>
+    <div class="wrapper-article col-15">
+        <div class="redirect col-2">
+            <span id="redirect-heading">
+                <a href="index.html">Tin tức</a>
+                >>
+                <a href="category.html">Thế giới</a>
+            </span>
+            <ul class="redirect-child">
+                <li>
+                    <a id="" href="new-world-1.html">Sân bay Đan Mạch đóng cửa vì bị dọa đánh bom</a>
+                </li>
+                <li>
+                    <a id="redirect-heading" href="new-world-2.html">Nga áp đảo Ukraine nhờ năng lực sản xuất vũ khí</a>
+                </li>
+                <li>
+                    <a id="" href="new-world-3.html">Ukraine tiết lộ vũ khí 'hạ oanh tạc cơ Nga'</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content col-10">
+            <div class="header">
+                <h2 class="tiny-heading hint">
+                    <a></a>
+                </h2>
+                <h2 class="tiny-heading hint">Thứ bảy, 20/4/2024, 19:00 (GMT+7)</h2>
+            </div>
+            <h2 class="big-heading">Nga áp đảo Ukraine nhờ năng lực sản xuất vũ khí</h2>
+            <p>
+                Trong khi Ukraine phụ thuộc vào viện trợ quân sự phương Tây, Nga có thể chủ động sản xuất vũ khí, qua đó lấn át đối phương trên chiến trường.
+
+                <br><br>Sau hơn hai năm chiến sự, Nga không cạn kiệt đạn pháo, xe tăng, tên lửa như dự báo của phương Tây. Ngược lại, nước này đang tăng tốc sản xuất quốc phòng, bổ sung liên tục kho vũ khí và đạn dược, trong khi Ukraine phải mòn mỏi chờ đợi nguồn hỗ trợ ngày càng cạn kiệt từ phương Tây.
+
+                <br><br>Nhờ ưu thế này, Nga có thể duy trì chiến dịch tại Ukraine trong ít nhất hai năm tới, giới phân tích nhận định. Với Ukraine, Giám đốc Cơ quan Tình báo Trung ương Mỹ (CIA) William Burns cảnh báo Kiev có thể thua trận ngay trong năm nay nếu không nhận được thêm viện trợ từ Mỹ và các đồng minh.
+
+                <br><br>Quân đội Nga gặp khó khăn trong việc phát triển các loại vũ khí công nghệ cao nhằm tăng hiệu suất chiến đấu của binh sĩ, nhưng họ lại có lợi thế đáng kể về quân số, khả năng cung cấp những loại vũ khí cũ, không quá hiện đại nhưng đáng tin cậy trên chiến trường.
+            
+
+            <div id="image"><img src="https://i1-vnexpress.vnecdn.net/2024/04/19/EURJ2EU27NJWLD77KIVTSR3AUI-jpe-3304-1206-1713545940.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=Vb-Q4PZtnWaiytz7svDKpg"></div>
+            <h2 class="image-title">Xe tăng của quân đội Nga tại Zaporizhzhia hồi tháng 7/2022. Ảnh: Reuters</h2>
+            <p>
+                Bằng cách điều chỉnh lại nền kinh tế theo mô hình thời chiến, cho các nhà máy hoạt động hết công suất để sản xuất hoặc tân trang khí tài cũ hay mua trang thiết bị quân sự từ nước ngoài, sức mạnh quân sự Nga đã phục hồi đáng kinh ngạc sau những tổn thất ban đầu ở Ukraine.
+
+                <br><br>"Nga không đầu tư thêm cho các khí tài hiện đại nữa, nhưng họ đang sản xuất nhiều vũ khí đơn giản hơn như súng trường, đạn pháo, vốn phù hợp với đại bộ phận binh lính", nhà kinh tế học người Nga Nikolai Kulbaka nhận xét.
+
+                <br><br>Trong bối cảnh viện trợ quân sự của phương Tây dành cho Kiev bị đình trệ trong những tháng gần đây, lực lượng Nga đã giành lại thế chủ động trên chiến trường Ukraine, nơi họ hiện có thể bắn pháo và triển khai UAV với tốc độ nhanh hơn nhiều so với Kiev.
+
+                <br><br>Nga đã tái vũ trang lực lượng bằng cách tân trang những khí tài hiện có, phần lớn từ thời Liên Xô. Các chuyên gia cho biết những bộ phận thay thế từ bên ngoài có chất lượng không ổn định, nhưng việc mua được chúng đã chứng tỏ khả năng lách lệnh trừng phạt của Moskva.
+
+                <br><br>Các vũ khí thời Liên Xô, trong đó có tên lửa và bom dẫn đường, ít nhất đến thời điểm hiện tại đã giúp Nga bù đắp cho việc chậm trễ triển khai những khí tài mới, tiên tiến như xe tăng T-14 Armata, "siêu vũ khí" được cho là có thể cạnh tranh với xe tăng Abrams của Mỹ hay Leopard của Đức.
+
+                <br><br>Các quan chức Mỹ ban đầu tin rằng xung đột Ukraine đã khiến quân đội Nga suy giảm sức mạnh nghiêm trọng. Nhưng tướng Christopher G. Cavoli, tư lệnh hàng đầu của Mỹ ở châu Âu, trong cuộc điều trần trước quốc hội gần đây lưu ý rằng Moskva hiện có nhiều binh lính hơn so với lúc giao tranh mới bùng phát hồi năm 2022 và lực lượng vũ trang nước này đã "thể hiện khả năng học hỏi, thích nghi nhanh chóng với những thách thức chiến trường, cả về mặt chiến thuật lẫn công nghệ".
+
+                <br><br>Tổng thống Nga Vladimir Putin đã phê duyệt ngân sách quốc phòng kỷ lục khoảng 115 tỷ USD trong năm 2024, gần bằng 1/3 tổng ngân sách hàng năm của đất nước.
+
+                <br><br>Những tháng gần đây, các quan chức hàng đầu Nga, trong đó có Bộ trưởng Quốc phòng Sergei Shoigu, đã công bố những con số kỷ lục về sản xuất quân sự. Theo đó, ngành quốc phòng Nga đã tăng gấp 4 lần sản lượng xe bọc thép, gấp 5 lần sản lượng xe tăng, lên 1.500 chiếc, đồng thời tăng sản xuất UAV và đạn pháo gấp gần 17 lần.
+
+                <br><br>"Tôi thấy số liệu của Bộ trưởng Shoigu và con số 1.500 xe tăng được cung cấp trong năm 2023 là chính xác về mặt kỹ thuật, nhưng nó cũng tính đến cả những chiếc đã được tân trang lại", Michael Gjerstad, nhà phân tích chiến tranh trên bộ tại Viện Nghiên cứu Chiến lược Quốc tế (IISS), trụ sở tại London, Anh, nói. "Cũng có thể một số xe tăng bị phá hủy và các bộ phận của chúng được tận dụng để chế tạo những xe tăng khác, làm tăng số liệu thống kê".
+
+            </p>
+                
+                <div id="image"><img src="https://i1-vnexpress.vnecdn.net/2024/04/19/AP24102561504726-6136-1713519472.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=MPU-s3lybz4mASu_9FxVAA"></div>
+                <h2 class="image-title">Lính Nga tại một địa điểm không xác định ở Ukraine, trong ảnh do cơ quan báo chí của Bộ Quốc phòng Nga công bố ngày 9/4. Ảnh: AP</h2>
+                <p>
+                    Gjerstad cho hay ông tin rằng Nga có thể sản xuất tới 330 xe tăng mới mỗi năm, nhưng thực tế chỉ xuất xưởng được một nửa số đó. Tuy nhiên, Nga vẫn cố gắng bổ sung khoảng 1.140 xe tăng mà họ ước tính đã mất vào năm 2023 bằng cách tân trang lại những mẫu cũ trong kho.
+
+                    <br><br>Giới chuyên gia lưu ý nguồn cung thiết bị hiện tại còn hạn chế và thách thức chính đối với Nga là phát triển năng lực chế tạo phương tiện chiến đấu mới khi không còn mẫu cũ để nâng cấp.
+
+                    <br><br>Những khung thân mới cuối cùng cho xe tăng T-80 đã được chế tạo từ nhiều thập kỷ trước. Nga đã tháo dỡ và tân trang lại hàng trăm chiếc được sản xuất cách đây hơn 50 năm và hồi mùa thu, các chỉ huy quân sự Nga đã ra lệnh nối lại dây chuyền sản xuất xe tăng T-80 tại Nhà máy Kỹ thuật Vận tải Omsk, viết tắt là Omsktransmash.
+
+                    <br><br>"Đây là nhiệm vụ trước mắt", Alexander Potapov, giám đốc điều hành công ty mẹ của msktransmash, nhà sản xuất xe tăng Uralvagonzavod, tuyên bố.
+
+                    <br><br>Nhưng theo Pavel Aksenov, chuyên gia quân sự và phóng viên quốc phòng của BBC, nỗ lực này đến nay vẫn chưa mang lại kết quả. "Họ chưa thể khởi động lại quá trình sản xuất hàng loạt xe tăng T-80. Việc tăng tốc độ sản xuất những dây chuyền đang có dễ dàng hơn nhiều", ông nói.
+
+                    <br><br>Đầu năm 2023, truyền thông nhà nước Nga dẫn lời một số quan chức quân sự giấu tên cho biết mẫu xe tăng Armata hiện đại đã được thử nghiệm trên tiền tuyến Ukraine, làm dấy lên đồn đoán rằng chúng sẽ sớm được triển khai.
+
+                    <br><br>Nhưng tháng trước, Sergei Chemezov người đứng đầu công ty sản xuất quốc phòng Nga Rostec, nói rằng Armata sẽ không được điều tới Ukraine tham chiến vì chi phí quá cao.
+
+                    <br><br>"Tất nhiên, T-14 Armata vượt trội so với các loại xe tăng khác, nhưng nó quá đắt", Chemezov cho biết. "Việc đặt mua T-90 sẽ dễ dàng hơn".
+
+                    <br><br>Cả nhà sản xuất Uralvagonzavod và các quan chức quốc phòng Nga đều không tiết lộ giá thành của xe tăng T-14 Armata, nhưng vào năm 2011, các chuyên gia Nga ước tính nó có giá khoảng 7,9 triệu USD, cao hơn gần hai lần so với giá xe tăng T-90M.
+
+                    <br><br>Theo Aksenov, không có bằng chứng nào cho thấy Nga đã hoàn thiện và đưa vào sản xuất loạt xe tăng T-14 Armata.
+
+                    <br><br>"Họ không có đủ thời gian hoàn thành nó trước xung đột", ông đánh giá. "Mặc dù việc bắt đầu nỗ lực hiện đại hóa như vậy là hợp lý, cuộc chiến ở Ukraine đòi hỏi cách tiếp cận rất khác. Bạn cần những vũ khí đáng tin cậy được cung cấp ổn định cho tiền tuyến, không hỏng vặt và có nhiều phụ tùng thay thế để sửa chữa".
+
+                    <br><br>Gjerstad cho biết Nga đã bù đắp khoảng cách về sức mạnh so với các vũ khí tiên tiến mà phương Tây cung cấp cho Ukraine bằng cách ưu tiên số lượng, phân bổ xe tăng tốt hơn cho các đơn vị được huấn luyện bài bản hơn, đồng thời cung cấp những mẫu T-55 và T-62 cũ hơn cho các đơn vị có vai trò ít quan trọng hơn.
+
+                    <br><br>"Bạn muốn có ba chiếc Ford hay một chiếc Cadillac", Gjerstad nói. "Đó chính là suy nghĩ của người Nga".
+
+                    <br><br>Với chiến trường Ukraine, UAV thậm chí còn quan trọng hơn xe tăng. Để tăng nguồn cung, Nga đã ký thỏa thuận với Iran để thành lập một nhà máy sản xuất UAV Shahed ở Tatarstan, cách Moskva khoảng 800 km về phía đông, và đẩy mạnh sản xuất UAV tự sát Lancet do một công ty con thuộc tập đoàn vũ khí khổng lồ Kalashnikov Concern của nước này sản xuất.
+
+                    <br><br>"Họ đã chuyển đổi các trung tâm thương mại thành xưởng sản xuất UAV, nơi họ rõ ràng có thể mở rộng quy mô sản xuất lên khá nhiều", Fabian Hinz, chuyên gia về UAV của IISS cho hay.
+
+                    <br><br>"Nga không cần phải trở thành quân đội sáng tạo nhất thế giới", Hinz nói thêm. "Nếu họ có được một vài hệ thống hoạt động tốt, như Lancet, và sau đó bằng cách nào đó tăng mạnh sản xuất, chỉ điều đó đã đủ tạo nên sự khác biệt".
+                    <h3 class="author">Vũ Hoàng (Theo Washington Post, AFP, Reuters)</h3>
+                </p>
+            <!--NewsFooter-->
+            <div class="newsfooter">
+                <div>
+                    <button><ion-icon name="bookmark-outline"></ion-icon>Lưu</button>
+                </div>
+                <div>
+                    <label>Chia sẻ</label>
+                    <a title="Chia sẻ lên Facebook">
+                        <ion-icon name="logo-facebook"></use></ion-icon>
+                    </a>
+                    <a title="Chia sẻ lên Twitter">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a title="Chia sẻ lên Gmail">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                    
+                </div>
+
+
+                
+            </div>
+            <!--NewsFooter-->
+        </div>
+    </div>
+</body>
+<footer class="col-15">
+    <div class="col-4">
+        <h2>Báo tiếng Việt nhiều người xem nhất</h2>
+        <h2>Thuộc Bộ Khoa học và Công nghệ</h2>
+        <h2>Số giấy phép: 548/GP-BTTTT ngày 
+            <br>24/08/2021</h2>
+    </div>
+    <div class="col-4">
+        <p>Tổng biên tập: Phạm Hiếu
+            <br>
+            Địa chỉ: Tầng 10, Tòa A FPT Tower, số 10 Phạm Văn Bạch, 
+            <br>Dịch Vọng, Cầu Giấy, Hà Nội<br>
+            Điện thoại: 024 7300 8899 - máy lẻ 4500
+            
+            </p>
+    </div>
+    <div class="col-4">
+        <h2>© 1997-2024. Toàn bộ bản quyền thuộc về @ABC.XYZ</h2>
+    </div>
+
+</footer>
+</html>
+<script>
+    window.addEventListener('scroll', function() {
+        var nav = document.getElementById('navigation')
+        var scrollDistance = 120; // Tính theo px, tương đương 1rem
+        console.log(window.scrollY);
+        if (window.scrollY > scrollDistance) {
+            console.log(nav.classList);
+            nav.classList.add('fixed');
+        } else {
+            nav.classList.remove('fixed');
+        }
+    });
+</script>
