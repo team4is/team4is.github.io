@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <div>
+            <a href="index.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxG_yD1s8AdmKFvi6tz1fETTNXFEM8jHs0f-Dl2PA7-w&s"
+                height = "20rem">
+
+            </a>
+            <a id="time-now" class="nor-heading">
+
+            </a>
+            <script>
+                var today = new Date();
+                var date = today.getDate() + "/" + (today.getMonth()+1) + "/" + today.getFullYear();
+                document.getElementById("time-now").innerHTML = date;  
+            </script>
+            <a class="nor-heading">Hỗ trợ</a>
+        </div>
+        <div>
+            <a>Tin mới nhất</a>
+            <a>Tin theo khu vực</a>
+            <a><ion-icon name="person-outline"></ion-icon></a>
+        </div>
+    </div>
+    <div class="banner-span">
+        
+    </div>
+    <div class="col-15" style="display: flex; justify-content: center; border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5; background: white;" id="navigation">
+        <div class="nav col-12 col-md-12">
+            <button><a href="index.html">Trang chủ</a></button>
+            <button><a href="category.html#business">Kinh doanh</a></button>
+            <button><a href="category.html#sport">Thể thao</a></button>
+            <button><a href="category.html#science">Khoa học</a></button>
+            <button><a href="category.html#world">Thế giới</a></button>
+                
+            
+            <button><a href="search.html">Tìm kiếm</a></button>
+            <button><a href="contact.html">Liên hệ</a></button>
+          
+        </div>
+        
+    </div>
+    <div class="category col-15" style="margin-top: 1rem">
+        <div class="col-8 col-ld-12" id="show-result" style="border-right: 1px solid #e5e5e5; padding-right: 10px">
+            
+        </div>
+        <div class="col-4 col-ld-12 search">
+            <h2>Tìm kiếm tin tức</h2>
+            <div id="search-input">
+                <input id="keyword" placeholder="Từ khóa"></input>
+                <button onclick="Search()"><ion-icon name="search-outline"></ion-icon></button>
+            </div>
+
+        </div>
+    </div>
+    <div class="category col-15 hidden">
+        <div class="col-8" style="border-right: 1px solid #e5e5e5; padding-right: 10px">
+            <h2 id="cate-heading">Kinh doanh</h2>
+            <div id="cate-content">
+                <div class="cate-child col-15">
+                    <img src="https://i1-kinhdoanh.vnecdn.net/2024/04/20/Picture1-4681-1713605364.png?w=1020&h=0&q=100&dpr=1&fit=crop&s=xyzs0yBtxGdO7oLVHvfEUw" class="col-5">
+                    <div class="news-content col-10">
+                        <a href="new-business-1.html">Kỳ vọng đưa nông sản Việt ra thế giới từ cảng Chu Lai</a>
+                        <h3>Thilogi triển khai loạt giải pháp nhằm tối ưu hóa chuỗi giá trị xuất khẩu, đặt mục tiêu cảng Chu Lai thành cửa ngõ đưa nông sản Việt ra thế giới.</h3>
+                        
+                        <h4 id="nametag">Kinh doanh</h4>
+                    </div>
+                    
+                </div>
+                <div class="cate-child col-15">
+                    <img src="https://i1-kinhdoanh.vnecdn.net/2024/04/19/dau1-1713516093-3296-1713516533.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=qQAixW6sdsA1fkJrbnVijg" class="col-5">
+                    <div class="news-content col-10">
+                        <a href="new-business-2.html">Dâu tây Sơn La mất mùa, người trồng vẫn lãi cao</a>
+                        <h3>Mùa dâu tây Mộc Châu (Sơn La) năm nay bị ảnh hưởng thời tiết, sản lượng giảm mạnh nhưng nhờ giá tăng, nông dân vẫn có lãi. </h3>
+                        <h4 id="nametag">Kinh doanh</h4>
+                    </div>
+                </div>
+                <div class="cate-child col-15">
+                    <img src="https://i1-kinhdoanh.vnecdn.net/2024/04/20/gao-jpeg-1713570489-5241-1713570585.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=hP4n-CvtiWAqBMpS-Hrp3g" class="col-5">
+                    <div class="news-content col-10">
+                        <a href="new-business-3.html">Vượt Thái và Ấn Độ, Việt Nam thành nước xuất khẩu gạo lớn nhất vào Singapore</a>
+                        <h3>Lần đầu Việt Nam thành quốc gia xuất khẩu gạo lớn nhất vào Singapore, chiếm hơn 32% thị phần và được ưa chuộng hơn hàng Thái, Ấn Độ</h3>
+                        <h4 id="nametag">Kinh doanh</h4>
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination">
+                <li><a href="#"><</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">></a></li>
+              </ul>
+        </div>
+        <div class="col-4 col-md-4 search">
+            <h2>Tìm kiếm tin tức</h2>
+            <div id="search-input">
+                <input id="keyword" placeholder="Từ khóa"></input>
+                <button onclick="Search()"><ion-icon name="search-outline"></ion-icon></button>
+            </div>
+
+        </div>
+    </div>
+    <div class="category col-15 hidden">
+        <div class="col-8" style="border-right: 1px solid #e5e5e5; padding-right: 10px">
+            <h2 id="cate-heading">Thể thao</h2>
+            <div id="cate-content">
+                <div class="cate-child col-15">
+                    <img src="https://i1-thethao.vnecdn.net/2024/04/20/case2-1713590551-1713590563-6732-1713590622.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=DXmJFMhtPGu1lAcPVrPPvw" class="col-5">
+                    <div class="news-content col-10">
+                        <a href="new-sport-1.html">HLV Ancelotti khóc khi Casemiro về Man Utd</a>
+                        <h3>Casemiro suýt hủy vụ chuyển nhượng từ Real sang Man Utd, sau khi nhận ra HLV Carlo Ancelotti muốn giữ lại hè 2022.</h3>
+                        <h4 id="nametag">Thể thao</h4>
+                    </div>
+                </div>
+                <div class="cate-child col-15">
+                    <img src="https://i1-thethao.vnecdn.net/2024/04/20/ap24108752782038-1713583214-6469-1713583851.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=wXxd6_CfoYaxKujkoOd3Wg" class="col-5">
+                    <div class="news-content col-10">
+                        <a href="new-sport-2.html">Arteta vẫn tiếc trận thua Bayern</a>
+                        <h3>Trước trận gặp Wolves ở vòng 34 Ngoại hạng Anh, HLV Mikel Arteta cho rằng Arsenal chơi tốt trong phần lớn thời gian và lẽ ra phải loại Bayern ở tứ kết ... </h3>
+                        <h4 id="nametag">Thể thao</h4>
+                    </div>
+                </div>
+                <div class="cate-child col-15">
+                    <img src="https://i1-thethao.vnecdn.net/2024/04/20/ap24108748509345-4303-17135841-7825-9515-1713584691.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=mPL5192KwHL8_RmJnMrNTw" class="col-5">
+                    <div class="news-content col-10">
+                        <a href="new-sport-3.html">Guardiola: 'Man City không có thời gian để buồn'</a>
+                        <h3>Theo HLV Pep Guardiola, sau khi bị Real loại khỏi Champions League, Man City phải lập tức đứng dậy và tập trung cho trận bán kết Cup FA gặp Chelsea hôm nay.</h3>
+                        <h4 id="nametag">Thể thao</h4>
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination">
+                <li><a href="#"><</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">></a></li>
+              </ul>
+        </div>
+        <div class="col-4 col-md-4">
+
+        </div>
+    </div>
+    <div class="category col-15 hidden">
+        <div class="col-8" style="border-right: 1px solid #e5e5e5; padding-right: 10px">
+            <h2 id="cate-heading">Khoa học</h2>
+            <div id="cate-content">
+                <div class="cate-child col-15">
+                    <img src="https://i1-vnexpress.vnecdn.net/2024/04/19/Taungamtho-1713518951-7929-1713519485.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=NYOjluAK__qz5aEeHqaAiA" class="col-5">
+                    <div class="news-content col-10">
+                        <a href="new-science-1.html">Nhóm nhà khoa học làm 'chuột bạch' thở dưới nước</a>
+                        <h3>Trong Thế chiến II, một nhóm nhà khoa học đã tự thực hiện hơn 600 thí nghiệm hít thở để hỗ trợ các thợ lặn và thủy thủ tàu ngầm. </h3>
+                        <h4 id="nametag">Khoa học</h4>
+                    </div>
+                </div>
+                <div class="cate-child col-15">
+                    <img src="https://i1-sohoa.vnecdn.net/2024/04/19/khai-pha-cong-nghe-moi-trong-l-3013-4996-1713530315.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=z8dttmZSVD1p9rOsT9HezQ" class="col-5">
+                    <div class="news-content col-10">
+                        <a href="new-science-2.html">Ba thách thức lớn của hệ sinh thái đổi mới sáng tạo Việt Nam</a>
+                        <h3>Theo các chuyên gia, hệ sinh thái đổi mới sáng tạo Việt Nam nằm trong nhóm năng động, phát triển nhanh nhưng vẫn còn một số thách thức. </h3>
+                        <h4 id="nametag">Khoa học</h4>
+                    </div>
+                </div>
+                <div class="cate-child col-15">
+                    <img src="https://i1-vnexpress.vnecdn.net/2024/04/19/techfest-2023-1713537640-17135-5646-8218-1713537801.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=6C7Ljfro2mvmIu-6DldhRQ" class="col-5">
+                    <div class="news-content col-10">
+                        <a href="new-science-3.html">Khởi động Techfest Việt Nam 2024</a>
+                        <h3>Ngày hội Khởi nghiệp đổi mới sáng tạo Quốc gia (Techfest Việt Nam 2024) lần thứ 10, khởi động từ tháng 4, hướng tới đưa hệ sinh thái khởi nghiệp sáng tạo hội nhập khu vực, quốc tế. </h3>
+                        <h4 id="nametag">Khoa học</h4>
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination">
+                <li><a href="#"><</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">></a></li>
+              </ul>
+        </div>
+        <div class="col-4 col-md-4">
+
+        </div>
+    </div>
+    <div class="category col-15 hidden">
+        <div class="col-8" style="border-right: 1px solid #e5e5e5; padding-right: 10px">
+            <h2 id="cate-heading">Thế giới</h2>
+            <div id="cate-content">
+                <div class="cate-child col-15">
+                    <img src="https://i1-vnexpress.vnecdn.net/2024/04/20/noname-1713625572-9917-1713626271.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=CNDmPqACoCXg760kZTIf0A" class="col-5">
+                    <div class="news-content col-10">
+                        <a href="new-world-1.html">
+                            Sân bay Đan Mạch đóng cửa vì bị dọa đánh bom</a>
+                        <h3>Sân bay lớn thứ hai Đan Mạch Billund đã phải sơ tán và đóng cửa sau khi một người đàn ông đe dọa đánh bom địa điểm này. </h3>
+                        <h4 id="nametag">Thế giới</h4>
+                    </div>
+                </div>
+                <div class="cate-child col-15">
+                    <img src="https://i1-vnexpress.vnecdn.net/2024/04/19/EURJ2EU27NJWLD77KIVTSR3AUI-jpe-3304-1206-1713545940.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=Vb-Q4PZtnWaiytz7svDKpg" class="col-5">
+                    <div class="news-content col-10">
+                        <a href="new-world-2.html">Nga áp đảo Ukraine nhờ năng lực sản xuất vũ khí</a>
+                        <h3>Trong khi Ukraine phụ thuộc vào viện trợ quân sự phương Tây, Nga có thể chủ động sản xuất vũ khí, qua đó lấn át đối phương trên chiến trường.</h3>
+                        <h4 id="nametag">Thế giới</h4>
+                    </div>
+                </div>
+                <div class="cate-child col-15">
+                    <img src="https://i1-vnexpress.vnecdn.net/2024/04/20/111-1713609266-4645-1713609309.png?w=240&h=144&q=100&dpr=1&fit=crop&s=H5fHWttoomSyxT0GaV8bUQ" class="col-5">
+                    <div class="news-content col-10">
+                        <a href="new-world-3.html">Ukraine tiết lộ vũ khí 'hạ oanh tạc cơ Nga'</a>
+                        <h3>Trùm tình báo Ukraine Budanov cho biết quân đội nước này đã theo dõi phi cơ Tu-22M3 Nga trong một tuần trước khi phóng tên lửa S-200 bắn hạ.</h3>
+                        <h4 id="nametag">Thế giới</h4>
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination">
+                <li><a href="#"><</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">></a></li>
+              </ul>
+        </div>
+        <div class="col-4 col-md-4">
+
+        </div>
+    </div>
+    
+</body>
+<footer class="col-15">
+    <div class="col-4 col-md-4">
+        <h2>Báo tiếng Việt nhiều người xem nhất</h2>
+        <h2>Thuộc Bộ Khoa học và Công nghệ</h2>
+        <h2>Số giấy phép: 548/GP-BTTTT ngày 
+            <br>24/08/2021</h2>
+    </div>
+    <div class="col-4 col-md-4">
+        <p>Tổng biên tập: Phạm Hiếu
+            <br>
+            Địa chỉ: Tầng 10, Tòa A FPT Tower, số 10 Phạm Văn Bạch, 
+            <br>Dịch Vọng, Cầu Giấy, Hà Nội<br>
+            Điện thoại: 024 7300 8899 - máy lẻ 4500
+            
+            </p>
+    </div>
+    <div class="col-4 col-md-4">
+        <h2>© 1997-2024. Toàn bộ bản quyền thuộc về @ABC.XYZ</h2>
+    </div>
+
+</footer>
+</html>
+<script>
+    window.addEventListener('scroll', function() {
+        var nav = document.getElementById('navigation')
+        var scrollDistance = 120; // Tính theo px, tương đương 1rem
+        
+        if (window.scrollY > scrollDistance) {
+            
+            nav.classList.add('fixed');
+        } else {
+            nav.classList.remove('fixed');
+        }
+    });
+    let input = document.getElementById("keyword");
+    function Search(){
+        let showPane = document.getElementById("show-result")
+        let keyword = input.value;
+        let inner_string = "";
+        keyword = keyword.toLowerCase();
+        let cateChildren = document.getElementsByClassName("cate-child");
+        let result = [];
+
+        for (let i = 0; i < cateChildren.length; i++) {
+        let cateChild = cateChildren[i];
+        let cateChildHTML = cateChild.innerHTML;
+        let aList = cateChild.querySelectorAll("a");
+        
+        for (let j = 0; j < aList.length; j++) {
+            let aElement = aList[j];
+            
+            if (aElement.innerHTML.length >= 5) {
+            let aElementHTML = aElement.innerHTML;
+            let item = {
+                aElement: aElement,
+                cateChild: cateChild,
+                aElementHTML: aElementHTML,
+                cateChildHTML: '<div class="cate-child col-15">\n' + cateChildHTML + '</div>'
+            };
+            result.push(item);
+            }
+        }
+        }
+        
+        for (let i = 0; i < result.length; i++){
+            if (result[i].aElementHTML.toLowerCase().includes(keyword)){
+                console.log(result[i].cateChildHTML);
+                inner_string = inner_string + '\n' + result[i].cateChildHTML;
+                 
+            }
+            showPane.innerHTML = inner_string;
+        }
+
+    }
+    Search()
+</script>

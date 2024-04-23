@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <div>
+            <a href="index.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxG_yD1s8AdmKFvi6tz1fETTNXFEM8jHs0f-Dl2PA7-w&s"
+                height = "20rem">
+
+            </a>
+            <a id="time-now" class="nor-heading">
+
+            </a>
+            <script>
+                var today = new Date();
+                var date = today.getDate() + "/" + (today.getMonth()+1) + "/" + today.getFullYear();
+                document.getElementById("time-now").innerHTML = date;  
+            </script>
+            <a class="nor-heading">Hỗ trợ</a>
+        </div>
+        <div>
+            <a>Tin mới nhất</a>
+            <a>Tin theo khu vực</a>
+            <a><ion-icon name="person-outline"></ion-icon></a>
+        </div>
+    </div>
+    <div class="banner-span">
+        
+    </div>
+    <div class="col-15" style="display: flex; justify-content: center; border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5; background: white;" id="navigation">
+        <div class="nav col-12">
+            <button><a href="index.html">Trang chủ</a></button>
+            <button><a href="category.html#business">Kinh doanh</a></button>
+            <button><a href="category.html#sport">Thể thao</a></button>
+            <button><a href="category.html#science">Khoa học</a></button>
+            <button><a href="category.html#world">Thế giới</a></button>
+                
+            
+            <button><a href="search.html">Tìm kiếm</a></button>
+            <button><a href="contact.html">Liên hệ</a></button>
+          
+        </div>
+    </div>
+    <div class="wrapper-article col-15">
+        <div class="redirect col-2">
+            <span id="redirect-heading">
+                <a href="index.html">Tin tức</a>
+                >>
+                <a href="category.html">Kinh doanh</a>
+            </span>
+            <ul class="redirect-child">
+                <li>
+                    <a id="" href="new-business-1.html">Kỳ vọng đưa nông sản Việt ra thế giới từ cảng Chu Lai</a>
+                </li>
+                <li>
+                    <a id="redirect-heading" href="new-business-2.html">Dâu tây Sơn La mất mùa, người trồng vẫn lãi cao</a>
+                </li>
+                <li>
+                    <a id="" href="new-business-3.html">Vượt Thái và Ấn Độ, Việt Nam thành nước xuất khẩu gạo lớn nhất vào Singapore</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content col-10">
+            <div class="header">
+                <h2 class="tiny-heading hint">
+                    <a></a>
+                </h2>
+                <h2 class="tiny-heading hint">Thứ bảy, 20/4/2024, 08:10 (GMT+7)</h2>
+            </div>
+            <h2 class="big-heading">Dâu tây Sơn La mất mùa, người trồng vẫn lãi cao</h2>
+            <p>
+                Mùa dâu tây Mộc Châu (Sơn La) năm nay bị ảnh hưởng thời tiết, sản lượng giảm mạnh nhưng nhờ giá tăng, nông dân vẫn có lãi.
+
+                <br><br>Anh Hoàng sở hữu 2 ha dâu tây ở Mộc Châu, cho biết hết vụ năm nay, sản lượng giảm đến 30% so với năm ngoái, nhưng nhờ bán được giá tốt, gia đình anh thu gần nửa tỷ đồng. "Sau khi trừ các chi phí, tôi lãi khoảng 200 triệu đồng", anh cho hay.
+
+                <br><br>Cách đó không xa, vườn dâu rộng 4 ha của gia đình nhà ông Tuấn cũng cho doanh thu tiền tỷ khi bán được giá tốt.
+
+                <br><br>Theo ông, năm nay, đầu vụ giá dâu tây khoảng 60.000-80.000 đồng một kg, nhưng giữa và cuối vụ tăng cao lên 130.000-150.000 đồng một kg. "Vụ này gia đình tôi lãi hơn 500 triệu đồng, gần bằng năm ngoái dù bị mất mùa", ông nói.
+
+                <br><br>Ông Nguyễn Văn Nam, Giám đốc Hợp tác xã dâu tây Xuân Quế, huyện Mai Sơn cho hay năm nay, dâu tây không được mùa do ảnh hưởng của thời tiết khiến sản lượng giảm 25-30%. Nếu năm ngoái, hợp tác xã của ông bán ra thị trường 2.000 tấn, giờ chỉ khoảng 1.500 tấn. Tuy nhiên, đây là mặt hàng được ưa chuộng, bán rộng khắp cả nước với giá tốt nên trung bình mỗi ha, các thành viên thuộc hợp tác xã thu lãi tới 250 triệu đồng, cao hơn hộ trồng bên ngoài.
+            
+
+            <div id="image"><img src="https://i1-kinhdoanh.vnecdn.net/2024/04/19/dau1-1713516104-6668-1713516533.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=CqYDoi556AiaZZsblDXflQ"></div>
+            <h2 class="image-title">Dâu tây tại nhà vườn ở Sơn La. Ảnh: HTX Dâu tây Xuân Quế</h2>
+            <p>
+                Khảo sát trên thị trường cho thấy, dâu tây Sơn La cuối vụ có giá 150.000-300.000 đồng một kg (tùy kích cỡ), cao hơn 10-15% so với hàng Đà Lạt và đắt gấp đôi so với hàng Trung Quốc.
+
+                <br><br>Nếu các năm trước, dây này chỉ bán ở khu vực phía Bắc thì nay tiêu thụ ở hầu hết tỉnh thành phía Nam và cả miền Tây. Ngoài ra, sản phẩm cũng được bán trực tuyến trên mạng xã hội và các chợ online.
+
+                <br><br>Theo ông Nam, dâu năm nay ngoài vận chuyển bằng đường bộ, còn tăng cường thêm đường hàng không để chất lượng tươi ngon. Tuy nhiên, sản lượng đợt này giảm nên hàng bán ra thị trường thiếu hụt. Càng cuối vụ, giá càng tăng.
+
+                <br><br>Ông Hà Như Huệ - Giám đốc Sở Nông nghiệp và Phát triển Nông thôn Sơn La - cho biết năm nay toàn tỉnh có 615 ha, tăng mạnh so với năm ngoái. "Nhờ diện tích mở rộng giúp tổng sản lượng tăng, giá lại ổn định nên người trồng dâu có thu nhập cao", ông Huệ nói.
+
+                <br><br>Theo ông, dâu tây Sơn La đang có sức hấp dẫn hơn các loại khác trên thị trường vì giá hợp lý và chất lượng vượt trội. Ngoài thuận lợi về thổ nhưỡng, khí hậu ưu đãi cũng giúp dâu này ngọt và thơm hơn các vùng khác.
+
+                <br><br>Sở đang tuyên truyền để người trồng đồng loạt áp dụng tiêu chuẩn VietGAP nhằm cung cấp ra thị trường sản phẩm an toàn. Ngoài ra, so với năm ngoái, số hộ trồng theo tiêu chuẩn VietGAP, GlobalGAP và hữu cơ ngày càng tăng.
+
+                <br><br>Dây tây Sơn La ngày càng phổ biến trên thị trường, nhưng theo ông Huệ vẫn còn gặp khó khi bị dâu tây Trung Quốc trà trộn, mạo danh. Do đó, ông Khuyên người tiêu dùng cần mua hàng ở những chỗ uy tín để đảm bảo chất lượng.
+
+                <br><br>Để phân biệt hai loại dâu này, theo ông Nam, dâu tây Trung Quốc quả dài, thon hơn, tai cuống dài và xanh hơn, ăn khá nhạt. Trong khi đó, dâu tây Sơn La trông ngắn và mọng nước, tai cuống nhỏ, ăn ngọt đậm.
+
+                <br><br>Hiện Sở Khoa học và Công nghệ tỉnh Sơn La đang triển khai xây dựng hồ sơ đăng ký bảo hộ nhãn hiệu chứng nhận "Dâu tây Sơn La" theo các quy định của luật Sở hữu trí tuệ.
+                </p>
+            <!--NewsFooter-->
+            <div class="newsfooter">
+                <div>
+                    <button><ion-icon name="bookmark-outline"></ion-icon>Lưu</button>
+                </div>
+                <div>
+                    <label>Chia sẻ</label>
+                    <a title="Chia sẻ lên Facebook">
+                        <ion-icon name="logo-facebook"></use></ion-icon>
+                    </a>
+                    <a title="Chia sẻ lên Twitter">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a title="Chia sẻ lên Gmail">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                    
+                </div>
+
+
+                
+            </div>
+            <!--NewsFooter-->
+        </div>
+    </div>
+</body>
+<footer class="col-15">
+    <div class="col-4">
+        <h2>Báo tiếng Việt nhiều người xem nhất</h2>
+        <h2>Thuộc Bộ Khoa học và Công nghệ</h2>
+        <h2>Số giấy phép: 548/GP-BTTTT ngày 
+            <br>24/08/2021</h2>
+    </div>
+    <div class="col-4">
+        <p>Tổng biên tập: Phạm Hiếu
+            <br>
+            Địa chỉ: Tầng 10, Tòa A FPT Tower, số 10 Phạm Văn Bạch, 
+            <br>Dịch Vọng, Cầu Giấy, Hà Nội<br>
+            Điện thoại: 024 7300 8899 - máy lẻ 4500
+            
+            </p>
+    </div>
+    <div class="col-4">
+        <h2>© 1997-2024. Toàn bộ bản quyền thuộc về @ABC.XYZ</h2>
+    </div>
+
+</footer>
+</html>
+<script>
+    window.addEventListener('scroll', function() {
+        var nav = document.getElementById('navigation')
+        var scrollDistance = 120; // Tính theo px, tương đương 1rem
+        console.log(window.scrollY);
+        if (window.scrollY > scrollDistance) {
+            console.log(nav.classList);
+            nav.classList.add('fixed');
+        } else {
+            nav.classList.remove('fixed');
+        }
+    });
+</script>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets.js"></script>
+
+</head>
+<body>
+    <div class="banner">
+        <div>
+            <a href="index.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxG_yD1s8AdmKFvi6tz1fETTNXFEM8jHs0f-Dl2PA7-w&s"
+                height = "20rem">
+
+            </a>
+            <a id="time-now" class="nor-heading">
+
+            </a>
+            <script>
+                var today = new Date();
+                var date = today.getDate() + "/" + (today.getMonth()+1) + "/" + today.getFullYear();
+                document.getElementById("time-now").innerHTML = date;  
+            </script>
+            <a class="nor-heading">Hỗ trợ</a>
+        </div>
+        <div>
+            <a>Tin mới nhất</a>
+            <a>Tin theo khu vực</a>
+            <a><ion-icon name="person-outline"></ion-icon></a>
+        </div>
+    </div>
+    <div class="col-15" style="display: flex; justify-content: center; border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5; background: white" id="navigation" >
+        
+        <div class="nav col-12 col-md-12">
+            <button><a href="index.html">Trang chủ</a></button>
+            <button><a href="category.html#business">Kinh doanh</a></button>
+            <button><a href="category.html#sport">Thể thao</a></button>
+            <button><a href="category.html#science">Khoa học</a></button>
+            <button><a href="category.html#world">Thế giới</a></button>
+                
+            
+            <button><a href="search.html">Tìm kiếm</a></button>
+            <button><a href="contact.html">Liên hệ</a></button>
+          
+        </div>
+    </div>
+    
+    <div class="col-15" style="display: flex; justify-content: center; margin-top: 3rem">
+        <div class="col-12 col-md-12">
+            <h2 style="color: red;">Tin nổi bật</h2>
+
+        </div>
+    </div>
+    <div class="wrapper"> 
+        <div class="hotnews col-15">
+            
+            <div class="col-8 col-md-12">
+                <div class="col-15 headnews">
+                    <img src="https://i1-kinhdoanh.vnecdn.net/2024/04/20/gao-jpeg-1713570489-5241-1713570585.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=hP4n-CvtiWAqBMpS-Hrp3g">
+                    <div id="headnews-decrip">
+                        <a href="new-business-3.html">Vượt Thái và Ấn Độ, Việt Nam thành nước xuất khẩu gạo lớn nhất vào Singapore</a>
+                        <h3>Lần đầu Việt Nam thành quốc gia xuất khẩu gạo lớn nhất vào Singapore, chiếm hơn 32% thị phần và được ưa chuộng hơn hàng Thái, Ấn Độ. </h3>
+                    </div>
+                </div>
+                <div class="col-15 news-child-1" style="margin-top: 3rem">
+                    <div class="col-5 news-child">
+                        <img src="https://i1-kinhdoanh.vnecdn.net/2024/04/19/dau1-1713516093-3296-1713516533.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=qQAixW6sdsA1fkJrbnVijg">
+                        <a href="new-business-2.html">Dâu tây Sơn La mất mùa, người trồng vẫn lãi cao</a>
+                        <h4>Mùa dâu tây Mộc Châu (Sơn La) năm nay bị ảnh hưởng thời tiết, sản lượng giảm mạnh nhưng nhờ giá tăng, nông dân vẫn có lãi.</h4>
+                    </div>
+                    <div class="col-5 news-child">
+                        <img src="https://i1-sohoa.vnecdn.net/2024/04/19/khai-pha-cong-nghe-moi-trong-l-3013-4996-1713530315.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=z8dttmZSVD1p9rOsT9HezQ">
+                        <a href="new-science-2.html">Thách thức lớn của hệ đổi mới sáng tạo Việt Nam</a>
+                        <h4>Theo các chuyên gia, hệ sinh thái đổi mới sáng tạo Việt Nam nằm trong nhóm năng động, phát triển nhanh nhưng vẫn còn một số thách thức.</h4>
+                    </div>
+                    <div class="col-5 news-child">
+                        <img src="https://i1-thethao.vnecdn.net/2024/04/20/ap24108752782038-1713583214-6469-1713583851.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=wXxd6_CfoYaxKujkoOd3Wg">
+                        <a href="new-sport-3.html">Arteta vẫn tiếc trận thua Bayern</a>
+                        <h4>Trước trận gặp Wolves ở vòng 34 Ngoại hạng Anh, HLV Mikel Arteta cho rằng Arsenal chơi tốt trong phần lớn thời gian và lẽ ra phải loại Bayern ở tứ kết ...</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="ads-1 col-4">
+                <div>
+                    <iframe id="tpm_backup-creative-1713606507689" src="https://cdn.dtadnetwork.com/creatives/html5/202403/1711532099/index.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="false" style="width: 100%; height: 100%;"></iframe>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-15 event" style="display: flex; justify-content: center; margin-top: 3rem">
+            <div class="col-12 col-md-12" style=" border-top: 1px solid #e5e5e5">
+                <h2 id="special-heading">Sự kiện</h2>
+                <div class="col-15 swiper col-md-12">
+                    <div class="col-15 special swiper-wrapper">
+                        <div class="col-25 special-child swiper-slide">
+                            
+                            <img src="https://mediafile.qdnd.vn/images/2024/3/12/cover-2.jpg">
+                        </div>
+                        <div class="col-25 special-child swiper-slide">
+                            
+                            <img src="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/NHPT/cong-doan-viet-nam.jpg">
+                        </div>
+                        <div class="col-25 special-child swiper-slide">
+                            <img src="https://congdoanvienchucvn.org.vn/upload/image/Tin%20TLD/2024/95%20nam%20CDVN%201.jpeg">
+                        </div>
+                        <div class="col-25 special-child swiper-slide">
+                            <img src="https://toquoc.mediacdn.vn/280518851207290880/2023/8/28/photo-1693199835336-1693199835880130274810.jpg">
+                        </div>
+                        <div class="col-25 special-child swiper-slide">
+                            <img src="https://media.vneconomy.vn/w800/images/upload/2024/04/09/cover2024.jpg">
+                        </div>
+
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-15" style="display: flex; justify-content: center; margin-top: 3rem; height: 15rem">
+            <div class="col-12 col-md-12" style=" border-top: 1px solid #e5e5e5;">
+                <a href="category.html" style="display: block; color: tomato; font-size: 1.2rem; font-weight: 700; margin-bottom: 2rem">Chuyên mục</a>
+                <img src="background-2.png" width="100%" height="100%">
+                
+            </div>
+        </div>
+        <div class="col-15" style="display: flex; justify-content: center; margin-top: 3rem">
+            
+            <div class="category-index col-12 col-md-12" style=" border-top: 1px solid #e5e5e5; padding-top: 1rem; margin-top: 4rem">
+                <div class="col-md-12 col-25" id="cate">
+                    <div class="col-15" id="cate-heading1">
+                        <img src="https://i1-kinhdoanh.vnecdn.net/2024/04/20/picture1-1713605293-1713605308-6781-1713605365.png?w=220&h=132&q=100&dpr=1&fit=crop&s=a6N69K8MK-gNwLl7QTSCEg">
+                        <h2 class="tiny-heading" id="business">Kinh doanh</h2>
+                        <a href="new-business-1.html" class="nor-heading">Kỳ vọng đưa nông sản Việt ra thế giới từ cảng Chu Lai</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.16603 5.22584C9.61132 5.5227 9.61132 6.17705 9.16602 6.47391L5.26811 9.07252C4.76969 9.4048 4.10208 9.04751 4.10208 8.44849L4.10208 3.25126C4.10208 2.65224 4.76969 2.29495 5.26811 2.62722L9.16603 5.22584Z" fill="#7D7D7D"></path>
+                            </svg>
+                            <a href="new-business-2.html">Dâu tây Sơn La mất mùa, người trồng vẫn lãi cao</a></li>
+                        
+                        <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.16603 5.22584C9.61132 5.5227 9.61132 6.17705 9.16602 6.47391L5.26811 9.07252C4.76969 9.4048 4.10208 9.04751 4.10208 8.44849L4.10208 3.25126C4.10208 2.65224 4.76969 2.29495 5.26811 2.62722L9.16603 5.22584Z" fill="#7D7D7D"></path>
+                            </svg>
+                            <a href="new-business-2.html">Vượt Thái và Ấn Độ, Việt Nam thành nước xuất khẩu gạo lớn nhất vào Singapore</li></a>
+
+                        <li>
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.16603 5.22584C9.61132 5.5227 9.61132 6.17705 9.16602 6.47391L5.26811 9.07252C4.76969 9.4048 4.10208 9.04751 4.10208 8.44849L4.10208 3.25126C4.10208 2.65224 4.76969 2.29495 5.26811 2.62722L9.16603 5.22584Z" fill="#7D7D7D"></path>
+                        </svg>
+                        <a href="new-business-2.html">Dâu tây Sơn La mất mùa, người trồng vẫn lãi cao</a></li></li>
+                    </ul>
+                </div>
+                <div class="col-25 col-md-12" id="cate">
+                    <div class="col-15" id="cate-heading1">
+                        <img src="https://i1-thethao.vnecdn.net/2024/04/20/case2-1713590551-1713590563-6732-1713590622.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=ecwrGRUGVySDqd8yq6Nzdw">
+                        <h2 class="tiny-heading" id="sport">Thể thao</h2>
+                        <a href="new-sport-1.html">HLV Ancelotti khóc khi Casemiro về Man Utd</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.16603 5.22584C9.61132 5.5227 9.61132 6.17705 9.16602 6.47391L5.26811 9.07252C4.76969 9.4048 4.10208 9.04751 4.10208 8.44849L4.10208 3.25126C4.10208 2.65224 4.76969 2.29495 5.26811 2.62722L9.16603 5.22584Z" fill="#7D7D7D"></path>
+                            </svg>
+                            <a href="new-sport-2.html">Guardiola: 'Man City không có thời gian để buồn'</a></li>
+                        
+                        <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.16603 5.22584C9.61132 5.5227 9.61132 6.17705 9.16602 6.47391L5.26811 9.07252C4.76969 9.4048 4.10208 9.04751 4.10208 8.44849L4.10208 3.25126C4.10208 2.65224 4.76969 2.29495 5.26811 2.62722L9.16603 5.22584Z" fill="#7D7D7D"></path>
+                            </svg>
+                            <a href="new-sport-3.html">Arteta vẫn tiếc trận thua Bayern<a></a></li>
+
+                        <li>
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.16603 5.22584C9.61132 5.5227 9.61132 6.17705 9.16602 6.47391L5.26811 9.07252C4.76969 9.4048 4.10208 9.04751 4.10208 8.44849L4.10208 3.25126C4.10208 2.65224 4.76969 2.29495 5.26811 2.62722L9.16603 5.22584Z" fill="#7D7D7D"></path>
+                        </svg>
+                        <a href="new-sport-2.html">Guardiola: 'Man City không có thời gian để buồn'</li></a></li>
+                    </ul>
+                </div>
+                <div class="col-25 col-md-12" id="cate">
+                    <div class="col-15" id="cate-heading1">
+                        <img src="https://i1-vnexpress.vnecdn.net/2024/04/19/Taungamtho-1713518951-7929-1713519485.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=NYOjluAK__qz5aEeHqaAiA">
+                        <h2 class="tiny-heading" id="science">Khoa học</h2>
+                        <a href="new-science-1.html" class="nor-heading">Nhóm nhà khoa học làm 'chuột bạch' thở dưới nước
+                        </a>
+                    </div>
+                    <ul>
+                        <li>
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.16603 5.22584C9.61132 5.5227 9.61132 6.17705 9.16602 6.47391L5.26811 9.07252C4.76969 9.4048 4.10208 9.04751 4.10208 8.44849L4.10208 3.25126C4.10208 2.65224 4.76969 2.29495 5.26811 2.62722L9.16603 5.22584Z" fill="#7D7D7D"></path>
+                            </svg>
+                            <a href="new-science-2.html">Ba thách thức lớn của hệ sinh thái đổi mới sáng tạo Việt Nam</a>
+</li>
+                        
+                        <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.16603 5.22584C9.61132 5.5227 9.61132 6.17705 9.16602 6.47391L5.26811 9.07252C4.76969 9.4048 4.10208 9.04751 4.10208 8.44849L4.10208 3.25126C4.10208 2.65224 4.76969 2.29495 5.26811 2.62722L9.16603 5.22584Z" fill="#7D7D7D"></path>
+                            </svg>
+                            <a href="new-science-3.html">Khởi động Techfest Việt Nam 2024</a>
+                        </li>
+
+                        <li>
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.16603 5.22584C9.61132 5.5227 9.61132 6.17705 9.16602 6.47391L5.26811 9.07252C4.76969 9.4048 4.10208 9.04751 4.10208 8.44849L4.10208 3.25126C4.10208 2.65224 4.76969 2.29495 5.26811 2.62722L9.16603 5.22584Z" fill="#7D7D7D"></path>
+                        </svg>
+                        <a href="new-science-2.html">Ba thách thức lớn của hệ sinh thái đổi mới sáng tạo Việt Nam</a>
+</li>
+                    </ul>
+                </div>
+                <div class="col-25 col-md-12" id="cate">
+                    <div class="col-15" id="cate-heading1">
+                        <img src="https://i1-vnexpress.vnecdn.net/2024/04/20/noname-1713625572-9917-1713626271.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=2pejGXZVz3Fut1hf77wkNA">
+                        <h2 class="tiny-heading" id="world">Thế giới</h2>
+                        <a href="new-world-1.html" class="nor-heading">Sân bay Đan Mạch đóng cửa vì bị dọa đánh bom</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.16603 5.22584C9.61132 5.5227 9.61132 6.17705 9.16602 6.47391L5.26811 9.07252C4.76969 9.4048 4.10208 9.04751 4.10208 8.44849L4.10208 3.25126C4.10208 2.65224 4.76969 2.29495 5.26811 2.62722L9.16603 5.22584Z" fill="#7D7D7D"></path>
+                            </svg>
+                            <a href="new-world-2.html">Nga áp đảo Ukraine nhờ năng lực sản xuất vũ khí</a></li>
+                        
+                        <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.16603 5.22584C9.61132 5.5227 9.61132 6.17705 9.16602 6.47391L5.26811 9.07252C4.76969 9.4048 4.10208 9.04751 4.10208 8.44849L4.10208 3.25126C4.10208 2.65224 4.76969 2.29495 5.26811 2.62722L9.16603 5.22584Z" fill="#7D7D7D"></path>
+                            </svg>
+                            <a href="new-world-3.html">Ukraine tiết lộ vũ khí 'hạ oanh tạc cơ Nga'</a>
+                        </li>
+
+                        <li>
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.16603 5.22584C9.61132 5.5227 9.61132 6.17705 9.16602 6.47391L5.26811 9.07252C4.76969 9.4048 4.10208 9.04751 4.10208 8.44849L4.10208 3.25126C4.10208 2.65224 4.76969 2.29495 5.26811 2.62722L9.16603 5.22584Z" fill="#7D7D7D"></path>
+                        </svg>
+                        <a href="new-world-2.html">Nga áp đảo Ukraine nhờ năng lực sản xuất vũ khí</a>
+                    </ul>
+                </div>
+
+
+                
+            </div>
+        </div>       
+        </div>
+    </div>
+</body>
+<footer class="col-15 col-md-12">
+    <div class="col-4">
+        <h2>Báo tiếng Việt nhiều người xem nhất</h2>
+        <h2>Thuộc Bộ Khoa học và Công nghệ</h2>
+        <h2>Số giấy phép: 548/GP-BTTTT ngày 
+            <br>24/08/2021</h2>
+    </div>
+    <div class="col-4">
+        <p>Tổng biên tập: Phạm Hiếu
+            <br>
+            Địa chỉ: Tầng 10, Tòa A FPT Tower, số 10 Phạm Văn Bạch, 
+            <br>Dịch Vọng, Cầu Giấy, Hà Nội<br>
+            Điện thoại: 024 7300 8899 - máy lẻ 4500
+            
+            </p>
+    </div>
+    <div class="col-4">
+        <h2>© 1997-2024. Toàn bộ bản quyền thuộc về @ABC.XYZ</h2>
+    </div>
+
+</footer>
+</html>
+
+<script>
+    // Sửa nav
+    window.addEventListener('scroll', function() {
+        var nav = document.getElementById('navigation')
+        var scrollDistance = 120; // Tính theo px, tương đương 1rem
+        console.log(window.scrollY);
+        if (window.scrollY > scrollDistance) {
+            console.log(nav.classList);
+            nav.classList.add('fixed');
+        } else {
+            nav.classList.remove('fixed');
+        }
+    });
+    // Sử dụng swiper js
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 3,
+        
+    
+        direction: 'horizontal',
+        loop: true,
+        autoplay:{
+            delay: 3000,
+        },
+
+        
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        
+        breakpoints: {
+           1200: {
+              slidesPerView: 'auto',
+              spaceBetween: 0,
+           },
+           830: {
+              slidesPerView: 'auto',
+              spaceBetween: 0, // <- doesn't work
+           }
+        }
+    });
+</script>
